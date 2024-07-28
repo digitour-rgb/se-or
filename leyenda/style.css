@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{ 
+    font-family: "Poppins", sans-serif; 
+}
+
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(imagenes3/fondob.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh; /* Puedes ajustar la altura según tus necesidades */
+    display: flex;
+    align-items: center;
+}
+
+.leyenda {
+    padding: 0; /* Elimina el padding */
+    margin:  20px 0; /* Centra horizontalmente */
+    background-color: #E1E2E6; /* Color más oscuro */
+    width: 70%; /* Ancho del contenedor */
+    position: fixed; /* Fija el contenedor en la parte superior */
+    top: 0; /* Asegura que el contenedor esté en la parte superior de la pantalla */
+    left: 50%; /* Coloca el contenedor en el centro de la pantalla */
+    transform: translateX(-50%); /* Ajusta para que el contenedor esté centrado */
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+.leyenda-content {
+    text-align: center;
+}
+
+.leyenda-content h1 {
+    font-size: 25px;
+    line-height: 50px;
+    text-transform: uppercase;
+    width: 70%; /* Asegura que el h1 tenga el mismo ancho que el contenedor */
+    padding: 0; /* Elimina el padding */
+    margin: 0 auto 15px auto; /* Asegura que el h1 esté centrado y tenga un margen inferior */
+    text-align: center;
+}
+
+.lepar{
+    padding: 5px 0;
+    background-color: #f5f5f5;
+    position: relative;
+    width: 70%;
+    margin: 130px auto 0 auto; /* Asegura que el contenedor esté centrado */
+    }
+    
+    .lepar-content {
+        text-align: center;
+    }
+
+
+.txt-p, .txt-p2, .txt-p3 {
+    font-size: 15px;
+    color: #000000;
+    padding: 0 10%;
+    margin-bottom: 35px;
+    text-align: justify; 
+    }
+.responsive-img {
+    display: block; /* Asegura que la imagen se trate como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    }
+    
+@media (max-width: 991px) {
+    .responsive-img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+    }
